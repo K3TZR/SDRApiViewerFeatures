@@ -1,0 +1,59 @@
+{
+  "pins" : [
+    {
+      "identity" : "apifeatures",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/K3TZR/ApiFeatures.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "37a8c97234bee500c967c2ed25c2abf4f394ca74"
+      }
+    },
+    {
+      "identity" : "cocoaasyncsocket",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robbiehanson/CocoaAsyncSocket",
+      "state" : {
+        "revision" : "dbdc00669c1ced63b27c3c5f052ee4d28f10150c",
+        "version" : "7.6.5"
+      }
+    },
+    {
+      "identity" : "commonfeatures",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/K3TZR/CommonFeatures.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6a742864bd80f741a0690cd64369e4790ae6acde"
+      }
+    },
+    {
+      "identity" : "jwtdecode.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/auth0/JWTDecode.swift",
+      "state" : {
+        "revision" : "3cd207fb9e943b6168a117baa3936c823204c2dc",
+        "version" : "2.6.3"
+      }
+    },
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections",
+      "state" : {
+        "revision" : "d029d9d39c87bed85b1c50adee7c41795261a192",
+        "version" : "1.0.6"
+      }
+    },
+    {
+      "identity" : "swift-identified-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-identified-collections",
+      "state" : {
+        "revision" : "d1e45f3e1eee2c9193f5369fa9d70a6ddad635e8",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

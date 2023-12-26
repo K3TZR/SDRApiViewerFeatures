@@ -4,11 +4,31 @@
 import PackageDescription
 
 let package = Package(
-    name: "ApiViewerFeatures",
-    targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .executableTarget(
-            name: "ApiViewerFeatures"),
-    ]
+  name: "SDRApiFeatures",
+  platforms: [.macOS(.v14),],
+  
+  products: [
+    .library(name: "ObjectsView", targets: ["ObjectsView"]),
+    .library(name: "MessagesView", targets: ["MessagesView"]),
+  ],
+  
+  dependencies: [
+    // ----- K3TZR -----
+    .package(url: "https://github.com/K3TZR/ApiFeatures.git", branch: "main"),
+  ],
+  
+  targets: [
+    // --------------- Modules ---------------
+    // MessagesView
+    .target(name: "MessagesView", dependencies: [
+      .product(name: "FlexApi", package: "ApiFeatures"),
+    ]),
+    
+    // ObjectsView
+    .target(name: "ObjectsView", dependencies: [
+      .product(name: "FlexApi", package: "ApiFeatures"),
+    ]),
+    
+    // ---------------- Tests ----------------
+  ]
 )
